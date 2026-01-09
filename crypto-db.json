@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "updated": "2026-01-09",
+    "description": "Public cryptocurrency metadata database for integration with the cinematic UI project.",
+    "maintainer": "valentin86-arch",
+    "source": "manual-curated"
+  },
+
+  "categories": [
+    "store_of_value",
+    "smart_contracts",
+    "privacy",
+    "defi",
+    "meme",
+    "infrastructure",
+    "payments",
+    "ai",
+    "gaming"
+  ],
+
+  "cryptocurrencies": [
+    {
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "category": "store_of_value",
+      "description": "First decentralized cryptocurrency and the most recognized digital store of value.",
+      "origin": 2009,
+      "consensus": "Proof of Work",
+      "technology": "SHA-256",
+      "supply": {
+        "max": 21000000,
+        "circulating": 19500000
+      },
+      "risk_level": "medium",
+      "utility": ["store_of_value", "collateral", "reserve_asset"],
+      "tags": ["decentralized", "pow", "legacy", "high-liquidity"],
+      "links": {
+        "website": "https://bitcoin.org",
+        "whitepaper": "https://bitcoin.org/bitcoin.pdf"
+      }
+    },
+
+    {
+      "symbol": "ETH",
+      "name": "Ethereum",
+      "category": "smart_contracts",
+      "description": "Programmable blockchain enabling decentralized applications, smart contracts, and token ecosystems.",
+      "origin": 2015,
+      "consensus": "Proof of Stake",
+      "technology": "EVM",
+      "supply": {
+        "max": null,
+        "circulating": 120000000
+      },
+      "risk_level": "medium",
+      "utility": ["smart_contracts", "defi", "nfts", "infrastructure"],
+      "tags": ["smart-contracts", "ecosystem", "pos", "scalable"],
+      "links": {
+        "website": "https://ethereum.org",
+        "docs": "https://ethereum.org/en/developers/docs/"
+      }
+    },
+
+    {
+      "symbol": "XMR",
+      "name": "Monero",
+      "category": "privacy",
+      "description": "Privacy-focused cryptocurrency using advanced cryptography to obfuscate transactions.",
+      "origin": 2014,
+      "consensus": "Proof of Work",
+      "technology": "RandomX",
+      "supply": {
+        "max": null,
+        "circulating": 18400000
+      },
+      "risk_level": "high",
+      "utility": ["private_transactions"],
+      "tags": ["privacy", "fungible", "pow"],
+      "links": {
+        "website": "https://www.getmonero.org/"
+      }
+    },
+
+    {
+      "symbol": "ADA",
+      "name": "Cardano",
+      "category": "smart_contracts",
+      "description": "Research-driven blockchain platform focused on scalability, sustainability, and formal verification.",
+      "origin": 2017,
+      "consensus": "Proof of Stake",
+      "technology": "Ouroboros",
+      "supply": {
+        "max": 45000000000,
+        "circulating": 35000000000
+      },
+      "risk_level": "medium",
+      "utility": ["smart_contracts", "governance"],
+      "tags": ["research", "pos", "scalable"],
+      "links": {
+        "website": "https://cardano.org/"
+      }
+    },
+
+    {
+      "symbol": "SOL",
+      "name": "Solana",
+      "category": "infrastructure",
+      "description": "High-performance blockchain optimized for speed and low fees.",
+      "origin": 2020,
+      "consensus": "Proof of History + Proof of Stake",
+      "technology": "Rust-based",
+      "supply": {
+        "max": null,
+        "circulating": 430000000
+      },
+      "risk_level": "high",
+      "utility": ["smart_contracts", "defi", "nfts", "gaming"],
+      "tags": ["high-speed", "pos", "ecosystem"],
+      "links": {
+        "website": "https://solana.com/"
+      }
+    },
+
+    {
+      "symbol": "DOGE",
+      "name": "Dogecoin",
+      "category": "meme",
+      "description": "Originally created as a joke, now a widely recognized meme cryptocurrency.",
+      "origin": 2013,
+      "consensus": "Proof of Work",
+      "technology": "Scrypt",
+      "supply": {
+        "max": null,
+        "circulating": 142000000000
+      },
+      "risk_level": "high",
+      "utility": ["payments", "tipping"],
+      "tags": ["meme", "community", "pow"],
+      "links": {
+        "website": "https://dogecoin.com/"
+      }
+    },
+
+    {
+      "symbol": "LINK",
+      "name": "Chainlink",
+      "category": "infrastructure",
+      "description": "Decentralized oracle network connecting smart contracts with real-world data.",
+      "origin": 2017,
+      "consensus": "Hybrid",
+      "technology": "Oracle Network",
+      "supply": {
+        "max": 1000000000,
+        "circulating": 587000000
+      },
+      "risk_level": "medium",
+      "utility": ["oracles", "defi"],
+      "tags": ["oracle", "infrastructure", "data"],
+      "links": {
+        "website": "https://chain.link/"
+      }
+    }
+  ]
+}
