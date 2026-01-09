@@ -160,7 +160,7 @@
       "links": {
         "website": "https://chain.link/"
       }
-    }
+    },
     {
   "symbol": "AVAX",
   "name": "Avalanche",
@@ -179,7 +179,7 @@
   "links": {
     "website": "https://www.avax.network/"
   }
-}
+},
 
 {
   "symbol": "LTC",
@@ -199,7 +199,7 @@
   "links": {
     "website": "https://litecoin.org/"
   }
-}
+},
 {
   "symbol": "XRP",
   "name": "XRP",
@@ -218,7 +218,7 @@
   "links": {
     "website": "https://xrpl.org/"
   }
-}
+},
 {
   "symbol": "MATIC",
   "name": "Polygon",
@@ -237,7 +237,7 @@
   "links": {
     "website": "https://polygon.technology/"
   }
-}
+},
 {
   "symbol": "ATOM",
   "name": "Cosmos",
@@ -256,7 +256,7 @@
   "links": {
     "website": "https://cosmos.network/"
   }
-}
+},
 {
   "symbol": "ICP",
   "name": "Internet Computer",
@@ -275,7 +275,7 @@
   "links": {
     "website": "https://internetcomputer.org/"
   }
-}
+},
 {
   "symbol": "ARB",
   "name": "Arbitrum",
@@ -294,7 +294,7 @@
   "links": {
     "website": "https://arbitrum.io/"
   }
-}
+},
 {
   "symbol": "OP",
   "name": "Optimism",
@@ -313,7 +313,7 @@
   "links": {
     "website": "https://www.optimism.io/"
   }
-}
+},
 {
   "symbol": "NEAR",
   "name": "Near Protocol",
