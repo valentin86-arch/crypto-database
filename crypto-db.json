@@ -161,5 +161,178 @@
         "website": "https://chain.link/"
       }
     }
+    {
+  "symbol": "AVAX",
+  "name": "Avalanche",
+  "category": "infrastructure",
+  "description": "High-speed blockchain platform optimized for scalability and low fees.",
+  "origin": 2020,
+  "consensus": "Snowman",
+  "technology": "Avalanche VM",
+  "supply": {
+    "max": 720000000,
+    "circulating": 377000000
+  },
+  "risk_level": "medium",
+  "utility": ["defi", "smart_contracts"],
+  "tags": ["high-speed", "ecosystem", "scalable"],
+  "links": {
+    "website": "https://www.avax.network/"
+  }
+}
+
+{
+  "symbol": "LTC",
+  "name": "Litecoin",
+  "category": "payments",
+  "description": "Peer-to-peer cryptocurrency designed for fast, low-cost payments.",
+  "origin": 2011,
+  "consensus": "Proof of Work",
+  "technology": "Scrypt",
+  "supply": {
+    "max": 84000000,
+    "circulating": 74000000
+  },
+  "risk_level": "medium",
+  "utility": ["payments", "settlement"],
+  "tags": ["pow", "fast", "legacy"],
+  "links": {
+    "website": "https://litecoin.org/"
+  }
+}
+{
+  "symbol": "XRP",
+  "name": "XRP",
+  "category": "payments",
+  "description": "Digital asset optimized for fast, low-cost international payments.",
+  "origin": 2012,
+  "consensus": "Ripple Protocol Consensus",
+  "technology": "XRPL",
+  "supply": {
+    "max": 100000000000,
+    "circulating": 55000000000
+  },
+  "risk_level": "medium",
+  "utility": ["payments", "settlement"],
+  "tags": ["banking", "fast", "infrastructure"],
+  "links": {
+    "website": "https://xrpl.org/"
+  }
+}
+{
+  "symbol": "MATIC",
+  "name": "Polygon",
+  "category": "infrastructure",
+  "description": "Layer-2 scaling solution for Ethereum enabling fast and low-cost transactions.",
+  "origin": 2017,
+  "consensus": "Proof of Stake",
+  "technology": "Polygon SDK",
+  "supply": {
+    "max": 10000000000,
+    "circulating": 9300000000
+  },
+  "risk_level": "medium",
+  "utility": ["scaling", "defi", "nfts"],
+  "tags": ["layer2", "pos", "ecosystem"],
+  "links": {
+    "website": "https://polygon.technology/"
+  }
+}
+{
+  "symbol": "ATOM",
+  "name": "Cosmos",
+  "category": "infrastructure",
+  "description": "Interoperable blockchain ecosystem enabling communication between independent chains.",
+  "origin": 2019,
+  "consensus": "Tendermint BFT",
+  "technology": "Cosmos SDK",
+  "supply": {
+    "max": null,
+    "circulating": 390000000
+  },
+  "risk_level": "medium",
+  "utility": ["governance", "staking", "interoperability"],
+  "tags": ["ibc", "ecosystem", "pos"],
+  "links": {
+    "website": "https://cosmos.network/"
+  }
+}
+{
+  "symbol": "ICP",
+  "name": "Internet Computer",
+  "category": "infrastructure",
+  "description": "Blockchain designed to run smart contracts at web speed with unlimited scalability.",
+  "origin": 2021,
+  "consensus": "Chain Key",
+  "technology": "Internet Computer Protocol",
+  "supply": {
+    "max": null,
+    "circulating": 460000000
+  },
+  "risk_level": "high",
+  "utility": ["smart_contracts", "web3"],
+  "tags": ["scalable", "ecosystem", "innovative"],
+  "links": {
+    "website": "https://internetcomputer.org/"
+  }
+}
+{
+  "symbol": "ARB",
+  "name": "Arbitrum",
+  "category": "infrastructure",
+  "description": "Layer-2 optimistic rollup scaling Ethereum with low fees and high throughput.",
+  "origin": 2023,
+  "consensus": "Rollup",
+  "technology": "Optimistic Rollup",
+  "supply": {
+    "max": null,
+    "circulating": 1270000000
+  },
+  "risk_level": "medium",
+  "utility": ["governance", "scaling"],
+  "tags": ["layer2", "rollup", "ecosystem"],
+  "links": {
+    "website": "https://arbitrum.io/"
+  }
+}
+{
+  "symbol": "OP",
+  "name": "Optimism",
+  "category": "infrastructure",
+  "description": "Layer-2 optimistic rollup designed to scale Ethereum applications.",
+  "origin": 2022,
+  "consensus": "Rollup",
+  "technology": "Optimistic Rollup",
+  "supply": {
+    "max": 4294967296,
+    "circulating": 1000000000
+  },
+  "risk_level": "medium",
+  "utility": ["governance", "scaling"],
+  "tags": ["layer2", "rollup", "ecosystem"],
+  "links": {
+    "website": "https://www.optimism.io/"
+  }
+}
+{
+  "symbol": "NEAR",
+  "name": "Near Protocol",
+  "category": "infrastructure",
+  "description": "Sharded, developer-friendly blockchain optimized for usability and scalability.",
+  "origin": 2020,
+  "consensus": "Proof of Stake",
+  "technology": "Nightshade",
+  "supply": {
+    "max": null,
+    "circulating": 1000000000
+  },
+  "risk_level": "medium",
+  "utility": ["smart_contracts", "defi"],
+  "tags": ["sharding", "pos", "ecosystem"],
+  "links": {
+    "website": "https://near.org/"
+  }
+}
+
   ]
 }
