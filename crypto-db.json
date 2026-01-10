@@ -21,161 +21,253 @@
 
   "cryptocurrencies": [
     {
-      "symbol": "BTC",
-      "name": "Bitcoin",
-      "category": "store_of_value",
-      "description": "First decentralized cryptocurrency and the most recognized digital store of value.",
-      "origin": 2009,
-      "consensus": "Proof of Work",
-      "technology": "SHA-256",
-      "supply": {
-        "max": 21000000,
-        "circulating": 19500000
-      },
-      "risk_level": "medium",
-      "utility": ["store_of_value", "collateral", "reserve_asset"],
-      "tags": ["decentralized", "pow", "legacy", "high-liquidity"],
-      "links": {
-        "website": "https://bitcoin.org",
-        "whitepaper": "https://bitcoin.org/bitcoin.pdf"
-      }
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "category": "store_of_value",
+  "description": "First decentralized cryptocurrency and the most recognized digital store of value. It operates on a Proof of Work consensus mechanism secured by SHA‑256, features a fixed supply of 21 million coins, and is widely recognized as the leading digital store of value. Its network prioritizes security, decentralization, and monetary predictability, supported by a global ecosystem of miners, nodes, and Layer 2 scaling solutions.",
+  "origin": 2009,
+  "founder": "Satoshi Nakamoto",
+  "consensus": "Proof of Work",
+  "technology": "SHA-256",
+  "block_time": 600,
+  "block_reward": 3.125,
+  "halving_cycle": 210000,
+  "current_halving_epoch": 4,
+  "supply": {
+    "max": 21000000,
+    "circulating": 19500000
+  },
+  "risk_level": "medium",
+  "volatility": "medium-high",
+  "decentralization_score": 9.5,
+  "utility": ["store_of_value", "collateral", "reserve_asset"],
+  "tags": ["decentralized", "pow", "legacy", "high-liquidity"],
+  "layer2": ["Lightning Network", "Liquid"],
+  "notable_events": [
+    "Genesis Block (2009)",
+    "Mt. Gox Collapse (2014)",
+    "SegWit Activation (2017)",
+    "Taproot Upgrade (2021)"
+  ],
+  "links": {
+    "website": "https://bitcoin.org",
+    "whitepaper": "https://bitcoin.org/bitcoin.pdf"
+  }
     },
+    
+    {
+  "symbol": "ETH",
+  "name": "Ethereum",
+  "category": "smart_contracts",
+  "description": "Programmable blockchain enabling decentralized applications, smart contracts, and token ecosystems. Ethereum introduced the concept of a general-purpose virtual machine (EVM) and transitioned to Proof of Stake to improve energy efficiency and network scalability. It serves as the foundational infrastructure for DeFi, NFTs, DAOs, and a wide range of decentralized protocols.",
+  "origin": 2015,
+  "founder": ["Vitalik Buterin", "Gavin Wood", "Joseph Lubin"],
+  "consensus": "Proof of Stake",
+  "technology": "EVM",
+  "block_time": 12,
+  "scalability_model": "rollups",
+  "token_standards": ["ERC-20", "ERC-721", "ERC-1155"],
+  "supply": {
+    "max": null,
+    "circulating": 120000000
+  },
+  "risk_level": "medium",
+  "volatility": "medium-high",
+  "decentralization_score": 8.5,
+  "utility": ["smart_contracts", "defi", "nfts", "infrastructure"],
+  "tags": ["smart-contracts", "ecosystem", "pos", "scalable"],
+  "layer2": ["Arbitrum", "Optimism", "Base", "zkSync"],
+  "notable_events": [
+    "Frontier Launch (2015)",
+    "The DAO Fork (2016)",
+    "Metropolis Upgrades (2017-2019)",
+    "London Hard Fork (EIP-1559, 2021)",
+    "The Merge (2022)",
+    "Dencun Upgrade (2024)"
+  ],
+  "links": {
+    "website": "https://ethereum.org",
+    "docs": "https://ethereum.org/en/developers/docs/"
+  }
+},
+    
+    {
+  "symbol": "XMR",
+  "name": "Monero",
+  "category": "privacy",
+  "description": "Privacy-focused cryptocurrency using advanced cryptography to obfuscate transactions. Monero ensures sender, receiver, and amount confidentiality through ring signatures, stealth addresses, and confidential transactions, making it one of the most private and fungible digital assets.",
+  "origin": 2014,
+  "founder": "Community-driven",
+  "consensus": "Proof of Work",
+  "technology": "RandomX",
+  "block_time": 120,
+  "supply": {
+    "max": null,
+    "circulating": 18400000
+  },
+  "risk_level": "high",
+  "volatility": "high",
+  "decentralization_score": 8.0,
+  "utility": ["private_transactions"],
+  "tags": ["privacy", "fungible", "pow", "censorship-resistant"],
+  "privacy_features": ["Ring Signatures", "Stealth Addresses", "RingCT"],
+  "notable_events": [
+    "Launch of Monero (2014)",
+    "RingCT Activation (2017)",
+    "RandomX Upgrade (2019)"
+  ],
+  "links": {
+    "website": "https://www.getmonero.org/"
+  }
+},
+    
+    {
+  "symbol": "ADA",
+  "name": "Cardano",
+  "category": "smart_contracts",
+  "description": "Cardano is a research-driven blockchain platform built on peer-reviewed academic methods, focusing on scalability, sustainability, and formal verification. It uses the Ouroboros Proof of Stake protocol to achieve energy-efficient consensus and aims to provide a secure foundation for smart contracts, governance systems, and decentralized applications. Cardano emphasizes modular upgrades, interoperability, and long-term protocol stability through a layered architecture and mathematically verified components.",
+  "origin": 2017,
+  "founder": "Charles Hoskinson",
+  "consensus": "Proof of Stake",
+  "technology": "Ouroboros",
+  "block_time": 20,
+  "token_standards": ["CIP-25", "CIP-68"],
+  "supply": {
+    "max": 45000000000,
+    "circulating": 35000000000
+  },
+  "risk_level": "medium",
+  "volatility": "medium",
+  "decentralization_score": 8.5,
+  "utility": ["smart_contracts", "governance", "staking"],
+  "tags": ["research", "pos", "scalable", "peer-reviewed"],
+  "notable_events": [
+    "Byron Era Launch (2017)",
+    "Shelley Decentralization (2020)",
+    "Goguen Smart Contracts (2021)",
+    "Vasil Upgrade (2022)"
+  ],
+  "links": {
+    "website": "https://cardano.org/"
+  }
+},
+    
+    {
+  "symbol": "SOL",
+  "name": "Solana",
+  "category": "infrastructure",
+  "description": "Solana is a high-performance blockchain designed for fast, low-cost transactions using a hybrid consensus model combining Proof of History with Proof of Stake. Its architecture enables parallel transaction processing through the Sealevel runtime, supporting large-scale decentralized applications, DeFi protocols, NFT ecosystems, and real-time on-chain activity. Solana focuses on throughput, efficiency, and developer-friendly tooling built around Rust and C.",
+  "origin": 2020,
+  "founder": "Anatoly Yakovenko",
+  "consensus": "Proof of History + Proof of Stake",
+  "technology": "Rust-based",
+  "block_time": 0.4,
+  "scalability_model": "parallel execution (Sealevel)",
+  "supply": {
+    "max": null,
+    "circulating": 430000000
+  },
+  "risk_level": "high",
+  "volatility": "high",
+  "decentralization_score": 6.5,
+  "utility": ["smart_contracts", "defi", "nfts", "gaming", "infrastructure"],
+  "tags": ["high-speed", "pos", "ecosystem", "parallelized"],
+  "notable_events": [
+    "Mainnet Beta Launch (2020)",
+    "DeFi Summer Expansion (2021)",
+    "Network Congestion Events (2021-2022)",
+    "Firedancer Development Announced (2022)"
+  ],
+  "links": {
+    "website": "https://solana.com/"
+  }
+},
 
     {
-      "symbol": "ETH",
-      "name": "Ethereum",
-      "category": "smart_contracts",
-      "description": "Programmable blockchain enabling decentralized applications, smart contracts, and token ecosystems.",
-      "origin": 2015,
-      "consensus": "Proof of Stake",
-      "technology": "EVM",
-      "supply": {
-        "max": null,
-        "circulating": 120000000
-      },
-      "risk_level": "medium",
-      "utility": ["smart_contracts", "defi", "nfts", "infrastructure"],
-      "tags": ["smart-contracts", "ecosystem", "pos", "scalable"],
-      "links": {
-        "website": "https://ethereum.org",
-        "docs": "https://ethereum.org/en/developers/docs/"
-      }
-    },
+  "symbol": "DOGE",
+  "name": "Dogecoin",
+  "category": "meme",
+  "description": "Dogecoin is a peer-to-peer cryptocurrency originally created as a lighthearted experiment, later evolving into one of the most recognizable meme-based digital assets. It uses a Scrypt-based Proof of Work mechanism and maintains an inflationary supply model, making it suitable for fast, low-cost transactions, tipping, and community-driven use cases. Its ecosystem is sustained by a strong online community and broad cultural visibility.",
+  "origin": 2013,
+  "founder": ["Billy Markus", "Jackson Palmer"],
+  "consensus": "Proof of Work",
+  "technology": "Scrypt",
+  "block_time": 60,
+  "supply": {
+    "max": null,
+    "circulating": 142000000000
+  },
+  "risk_level": "high",
+  "volatility": "high",
+  "decentralization_score": 6.0,
+  "utility": ["payments", "tipping", "microtransactions"],
+  "tags": ["meme", "community", "pow", "inflationary"],
+  "notable_events": [
+    "Launch of Dogecoin (2013)",
+    "Community Fundraising Events (2014-2015)",
+    "Major Social Media Adoption (2020-2021)"
+  ],
+  "links": {
+    "website": "https://dogecoin.com/"
+  }
+},
 
-    {
-      "symbol": "XMR",
-      "name": "Monero",
-      "category": "privacy",
-      "description": "Privacy-focused cryptocurrency using advanced cryptography to obfuscate transactions.",
-      "origin": 2014,
-      "consensus": "Proof of Work",
-      "technology": "RandomX",
-      "supply": {
-        "max": null,
-        "circulating": 18400000
-      },
-      "risk_level": "high",
-      "utility": ["private_transactions"],
-      "tags": ["privacy", "fungible", "pow"],
-      "links": {
-        "website": "https://www.getmonero.org/"
-      }
-    },
+   {
+  "symbol": "LINK",
+  "name": "Chainlink",
+  "category": "infrastructure",
+  "description": "Chainlink is a decentralized oracle network designed to securely connect smart contracts with real-world data, off-chain computation, and external APIs. It provides reliable data feeds, verifiable randomness, cross-chain messaging, and trust-minimized automation, enabling advanced DeFi protocols and complex decentralized applications. Chainlink's architecture combines decentralized node operators, cryptographic proofs, and hybrid on-chain/off-chain execution to ensure data integrity and high availability.",
+  "origin": 2017,
+  "founder": ["Sergey Nazarov", "Steve Ellis"],
+  "consensus": "Hybrid",
+  "technology": "Oracle Network",
+  "block_time": null,
+  "scalability_model": "off-chain computation + decentralized oracles",
+  "supply": {
+    "max": 1000000000,
+    "circulating": 587000000
+  },
+  "risk_level": "medium",
+  "volatility": "medium-high",
+  "decentralization_score": 7.5,
+  "utility": ["oracles", "defi", "automation", "cross-chain"],
+  "tags": ["oracle", "infrastructure", "data", "hybrid-compute"],
+  "notable_events": [
+    "Chainlink Mainnet Launch (2019)",
+    "Launch of VRF (2020)",
+    "Chainlink 2.0 Vision (2021)",
+    "CCIP Launch (2023)"
+  ],
+  "links": {
+    "website": "https://chain.link/"
+  }
+},
 
-    {
-      "symbol": "ADA",
-      "name": "Cardano",
-      "category": "smart_contracts",
-      "description": "Research-driven blockchain platform focused on scalability, sustainability, and formal verification.",
-      "origin": 2017,
-      "consensus": "Proof of Stake",
-      "technology": "Ouroboros",
-      "supply": {
-        "max": 45000000000,
-        "circulating": 35000000000
-      },
-      "risk_level": "medium",
-      "utility": ["smart_contracts", "governance"],
-      "tags": ["research", "pos", "scalable"],
-      "links": {
-        "website": "https://cardano.org/"
-      }
-    },
-
-    {
-      "symbol": "SOL",
-      "name": "Solana",
-      "category": "infrastructure",
-      "description": "High-performance blockchain optimized for speed and low fees.",
-      "origin": 2020,
-      "consensus": "Proof of History + Proof of Stake",
-      "technology": "Rust-based",
-      "supply": {
-        "max": null,
-        "circulating": 430000000
-      },
-      "risk_level": "high",
-      "utility": ["smart_contracts", "defi", "nfts", "gaming"],
-      "tags": ["high-speed", "pos", "ecosystem"],
-      "links": {
-        "website": "https://solana.com/"
-      }
-    },
-
-    {
-      "symbol": "DOGE",
-      "name": "Dogecoin",
-      "category": "meme",
-      "description": "Originally created as a joke, now a widely recognized meme cryptocurrency.",
-      "origin": 2013,
-      "consensus": "Proof of Work",
-      "technology": "Scrypt",
-      "supply": {
-        "max": null,
-        "circulating": 142000000000
-      },
-      "risk_level": "high",
-      "utility": ["payments", "tipping"],
-      "tags": ["meme", "community", "pow"],
-      "links": {
-        "website": "https://dogecoin.com/"
-      }
-    },
-
-    {
-      "symbol": "LINK",
-      "name": "Chainlink",
-      "category": "infrastructure",
-      "description": "Decentralized oracle network connecting smart contracts with real-world data.",
-      "origin": 2017,
-      "consensus": "Hybrid",
-      "technology": "Oracle Network",
-      "supply": {
-        "max": 1000000000,
-        "circulating": 587000000
-      },
-      "risk_level": "medium",
-      "utility": ["oracles", "defi"],
-      "tags": ["oracle", "infrastructure", "data"],
-      "links": {
-        "website": "https://chain.link/"
-      }
-    },
-    {
+   {
   "symbol": "AVAX",
   "name": "Avalanche",
   "category": "infrastructure",
-  "description": "High-speed blockchain platform optimized for scalability and low fees.",
+  "description": "Avalanche is a high-performance blockchain platform designed for scalable, low-latency decentralized applications. It uses the Avalanche consensus family and the Snowman protocol to achieve sub-second finality, high throughput, and flexible subnet architecture. The network supports custom virtual machines, independent blockchains, and interoperable ecosystems, enabling DeFi, smart contracts, and enterprise-grade deployments.",
   "origin": 2020,
+  "founder": "Emin Gün Sirer",
   "consensus": "Snowman",
   "technology": "Avalanche VM",
+  "block_time": 0.3,
+  "scalability_model": "subnets + parallel chains",
   "supply": {
     "max": 720000000,
     "circulating": 377000000
   },
   "risk_level": "medium",
-  "utility": ["defi", "smart_contracts"],
-  "tags": ["high-speed", "ecosystem", "scalable"],
+  "volatility": "medium-high",
+  "decentralization_score": 7.0,
+  "utility": ["defi", "smart_contracts", "subnets", "infrastructure"],
+  "tags": ["high-speed", "ecosystem", "scalable", "subnets"],
+  "notable_events": [
+    "Avalanche Mainnet Launch (2020)",
+    "Avalanche Rush Incentive Program (2021)",
+    "Subnets Expansion (2022)"
+  ],
   "links": {
     "website": "https://www.avax.network/"
   }
@@ -185,153 +277,242 @@
   "symbol": "LTC",
   "name": "Litecoin",
   "category": "payments",
-  "description": "Peer-to-peer cryptocurrency designed for fast, low-cost payments.",
+  "description": "Litecoin is a peer-to-peer cryptocurrency created as a faster and more lightweight alternative to Bitcoin. It uses a Scrypt-based Proof of Work algorithm, enabling quicker block generation and low-cost transactions suitable for everyday payments and settlement. Litecoin maintains a long operational history, strong network stability, and broad exchange and wallet support, making it one of the oldest and most recognized digital payment assets.",
   "origin": 2011,
+  "founder": "Charlie Lee",
   "consensus": "Proof of Work",
   "technology": "Scrypt",
+  "block_time": 150,
+  "notable_features": ["Scrypt Mining", "Faster Blocks", "Low Fees"],
   "supply": {
     "max": 84000000,
     "circulating": 74000000
   },
   "risk_level": "medium",
-  "utility": ["payments", "settlement"],
-  "tags": ["pow", "fast", "legacy"],
+  "volatility": "medium",
+  "decentralization_score": 8.0,
+  "utility": ["payments", "settlement", "value_transfer"],
+  "tags": ["pow", "fast", "legacy", "low-fee"],
+  "notable_events": [
+    "Litecoin Launch (2011)",
+    "SegWit Activation (2017)",
+    "MimbleWimble Extension Blocks (2022)"
+  ],
   "links": {
     "website": "https://litecoin.org/"
   }
 },
+
 {
   "symbol": "XRP",
   "name": "XRP",
   "category": "payments",
-  "description": "Digital asset optimized for fast, low-cost international payments.",
+  "description": "XRP is a digital asset designed for fast, low-cost international payments and liquidity provisioning across financial networks. Operating on the XRP Ledger, it uses a unique consensus mechanism based on trusted validator lists rather than mining, enabling high throughput, low fees, and rapid settlement. XRP is commonly used for cross-border transfers, on-demand liquidity, and institutional payment infrastructure.",
   "origin": 2012,
+  "founder": ["Jed McCaleb", "Chris Larsen", "Arthur Britto"],
   "consensus": "Ripple Protocol Consensus",
   "technology": "XRPL",
+  "block_time": 3,
+  "scalability_model": "validator-based consensus",
   "supply": {
     "max": 100000000000,
     "circulating": 55000000000
   },
   "risk_level": "medium",
-  "utility": ["payments", "settlement"],
-  "tags": ["banking", "fast", "infrastructure"],
+  "volatility": "medium-high",
+  "decentralization_score": 6.5,
+  "utility": ["payments", "settlement", "liquidity"],
+  "tags": ["banking", "fast", "infrastructure", "cross-border"],
+  "notable_events": [
+    "XRP Ledger Launch (2012)",
+    "RippleNet Expansion (2017-2019)",
+    "SEC Lawsuit and Partial Resolution (2020-2023)"
+  ],
   "links": {
     "website": "https://xrpl.org/"
   }
 },
+
 {
   "symbol": "MATIC",
   "name": "Polygon",
   "category": "infrastructure",
-  "description": "Layer-2 scaling solution for Ethereum enabling fast and low-cost transactions.",
+  "description": "Polygon is a multi-chain scaling framework designed to extend Ethereum’s capabilities through fast, low-cost transactions and modular infrastructure. It uses a Proof of Stake chain and the Polygon SDK to support EVM-compatible networks, rollups, and custom sidechains. Polygon enables scalable DeFi, NFT platforms, gaming ecosystems, and enterprise applications while maintaining interoperability with Ethereum’s security and tooling.",
   "origin": 2017,
+  "founder": ["Jaynti Kanani", "Sandeep Nailwal", "Anurag Arjun"],
   "consensus": "Proof of Stake",
   "technology": "Polygon SDK",
+  "block_time": 2,
+  "scalability_model": "sidechains + rollups",
   "supply": {
     "max": 10000000000,
     "circulating": 9300000000
   },
   "risk_level": "medium",
-  "utility": ["scaling", "defi", "nfts"],
-  "tags": ["layer2", "pos", "ecosystem"],
+  "volatility": "medium-high",
+  "decentralization_score": 7.5,
+  "utility": ["scaling", "defi", "nfts", "gaming", "infrastructure"],
+  "tags": ["layer2", "pos", "ecosystem", "evm-compatible"],
+  "notable_events": [
+    "Matic Network Launch (2017)",
+    "Rebrand to Polygon (2021)",
+    "Polygon zkEVM Announcement (2022)",
+    "Polygon 2.0 Roadmap (2023)"
+  ],
   "links": {
     "website": "https://polygon.technology/"
   }
 },
+
 {
   "symbol": "ATOM",
   "name": "Cosmos",
   "category": "infrastructure",
-  "description": "Interoperable blockchain ecosystem enabling communication between independent chains.",
+  "description": "Cosmos is an interoperable blockchain ecosystem designed to connect independent networks through the Inter-Blockchain Communication (IBC) protocol. Built using the Cosmos SDK and secured by the Tendermint BFT consensus engine, it enables scalable, sovereign blockchains that can communicate, transfer assets, and coordinate seamlessly. Cosmos focuses on modularity, interoperability, and decentralized governance, forming a multi-chain architecture known as the Internet of Blockchains.",
   "origin": 2019,
+  "founder": ["Jae Kwon", "Ethan Buchman"],
   "consensus": "Tendermint BFT",
   "technology": "Cosmos SDK",
+  "block_time": 6,
+  "scalability_model": "sovereign chains + IBC",
   "supply": {
     "max": null,
     "circulating": 390000000
   },
   "risk_level": "medium",
-  "utility": ["governance", "staking", "interoperability"],
-  "tags": ["ibc", "ecosystem", "pos"],
+  "volatility": "medium-high",
+  "decentralization_score": 8.0,
+  "utility": ["governance", "staking", "interoperability", "security"],
+  "tags": ["ibc", "ecosystem", "pos", "modular"],
+  "notable_events": [
+    "Cosmos Hub Launch (2019)",
+    "IBC Activation (2021)",
+    "Cosmos 2.0 Proposal Discussions (2022)"
+  ],
   "links": {
     "website": "https://cosmos.network/"
   }
 },
+
 {
   "symbol": "ICP",
   "name": "Internet Computer",
   "category": "infrastructure",
-  "description": "Blockchain designed to run smart contracts at web speed with unlimited scalability.",
+  "description": "The Internet Computer is a decentralized computing platform designed to run smart contracts and applications at web speed with theoretically unlimited scalability. It uses Chain Key cryptography to enable fast finality, seamless upgrades, and direct interaction with the public internet. The protocol supports canister-based smart contracts, autonomous software, and a fully on-chain execution environment intended to extend blockchain functionality into full-stack web applications.",
   "origin": 2021,
+  "founder": "DFINITY Foundation",
   "consensus": "Chain Key",
   "technology": "Internet Computer Protocol",
+  "block_time": 1,
+  "scalability_model": "subnets + canister smart contracts",
   "supply": {
     "max": null,
     "circulating": 460000000
   },
   "risk_level": "high",
-  "utility": ["smart_contracts", "web3"],
-  "tags": ["scalable", "ecosystem", "innovative"],
+  "volatility": "high",
+  "decentralization_score": 6.5,
+  "utility": ["smart_contracts", "web3", "compute", "dapps"],
+  "tags": ["scalable", "ecosystem", "innovative", "web-speed"],
+  "notable_events": [
+    "Internet Computer Mainnet Launch (2021)",
+    "Chain Key Cryptography Release (2021)",
+    "SNS Decentralized Governance Framework (2023)"
+  ],
   "links": {
     "website": "https://internetcomputer.org/"
   }
 },
+
 {
   "symbol": "ARB",
   "name": "Arbitrum",
   "category": "infrastructure",
-  "description": "Layer-2 optimistic rollup scaling Ethereum with low fees and high throughput.",
+  "description": "Arbitrum is a Layer-2 scaling solution for Ethereum built on optimistic rollup technology, enabling high-throughput, low-cost transactions while inheriting Ethereum’s security. It uses off-chain execution with on-chain fraud proofs to validate state transitions, supporting complex smart contracts and large-scale decentralized applications. Arbitrum powers a rapidly growing ecosystem of DeFi, gaming, and infrastructure protocols, with governance managed through the ARB token.",
   "origin": 2023,
+  "founder": "Offchain Labs",
   "consensus": "Rollup",
   "technology": "Optimistic Rollup",
+  "block_time": null,
+  "scalability_model": "off-chain execution + fraud proofs",
   "supply": {
     "max": null,
     "circulating": 1270000000
   },
   "risk_level": "medium",
-  "utility": ["governance", "scaling"],
-  "tags": ["layer2", "rollup", "ecosystem"],
+  "volatility": "medium-high",
+  "decentralization_score": 7.0,
+  "utility": ["governance", "scaling", "infrastructure"],
+  "tags": ["layer2", "rollup", "ecosystem", "evm-compatible"],
+  "notable_events": [
+    "Arbitrum One Mainnet Launch (2021)",
+    "Arbitrum Nitro Upgrade (2022)",
+    "ARB Token Airdrop and DAO Launch (2023)"
+  ],
   "links": {
     "website": "https://arbitrum.io/"
   }
 },
+
 {
   "symbol": "OP",
   "name": "Optimism",
   "category": "infrastructure",
-  "description": "Layer-2 optimistic rollup designed to scale Ethereum applications.",
+  "description": "Optimism is a Layer-2 scaling solution for Ethereum built on optimistic rollup technology, enabling faster and cheaper transactions while inheriting Ethereum’s security. It uses off-chain execution with on-chain fraud proofs to validate state transitions, supporting EVM-compatible smart contracts and large-scale decentralized applications. Optimism powers a growing ecosystem of DeFi, infrastructure, and governance protocols, coordinated through the Optimism Collective.",
   "origin": 2022,
+  "founder": "OP Labs",
   "consensus": "Rollup",
   "technology": "Optimistic Rollup",
+  "block_time": null,
+  "scalability_model": "off-chain execution + fraud proofs",
   "supply": {
     "max": 4294967296,
     "circulating": 1000000000
   },
   "risk_level": "medium",
-  "utility": ["governance", "scaling"],
-  "tags": ["layer2", "rollup", "ecosystem"],
+  "volatility": "medium-high",
+  "decentralization_score": 7.0,
+  "utility": ["governance", "scaling", "infrastructure"],
+  "tags": ["layer2", "rollup", "ecosystem", "evm-compatible"],
+  "notable_events": [
+    "Optimism Mainnet Launch (2021)",
+    "OP Token Airdrop (2022)",
+    "Bedrock Upgrade (2023)"
+  ],
   "links": {
     "website": "https://www.optimism.io/"
   }
 },
+
 {
   "symbol": "NEAR",
   "name": "Near Protocol",
   "category": "infrastructure",
-  "description": "Sharded, developer-friendly blockchain optimized for usability and scalability.",
+  "description": "NEAR Protocol is a sharded, developer-focused blockchain designed for high usability, fast execution, and scalable decentralized applications. It uses the Nightshade sharding model to process transactions in parallel, enabling low-latency performance and predictable fees. NEAR emphasizes human-readable accounts, progressive onboarding, and a robust smart contract environment built for Web3 applications and large-scale ecosystems.",
   "origin": 2020,
+  "founder": ["Illia Polosukhin", "Alexander Skidanov"],
   "consensus": "Proof of Stake",
   "technology": "Nightshade",
+  "block_time": 1,
+  "scalability_model": "sharding + parallel execution",
   "supply": {
     "max": null,
     "circulating": 1000000000
   },
   "risk_level": "medium",
-  "utility": ["smart_contracts", "defi"],
-  "tags": ["sharding", "pos", "ecosystem"],
+  "volatility": "medium-high",
+  "decentralization_score": 7.5,
+  "utility": ["smart_contracts", "defi", "web3", "infrastructure"],
+  "tags": ["sharding", "pos", "ecosystem", "scalable"],
+  "notable_events": [
+    "Mainnet Phase 0 Launch (2020)",
+    "Nightshade Sharding Activation (2021)",
+    "NEAR x Aurora Expansion (2022)"
+  ],
   "links": {
     "website": "https://near.org/"
   }
 }
+
   ]
 }
